@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pac Desarrollo - Invernadero Virtual</title>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="js/javascript.js"></script>
+</head>
+
+<body>
+  <div class="contenedor">
+    <div class="menu">
+      <b>Selecciona el número de plantas para empezar</b>
+      <select id="numeroPlantas">
+        <option disabled selected>-- Seleccionar número de plantas --</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+      <button id="Iniciar">Iniciar</button>
+      <button id="Reiniciar">Reiniciar</button>
+    </div>
+    
+    <div class="contenedorInvernadero">
+      <h1>Invernadero Virtual</h1>
+      <div id="techoInvernadero"></div>
+  
+      <div id="pintaPlantas"></div>
+    </div>
+
+    <div class="ranking">
+      <h2>Ranking</h2>
+      <div class="resultados"></div>
+    </div>
+  </div>
+</body>
+
+</html>

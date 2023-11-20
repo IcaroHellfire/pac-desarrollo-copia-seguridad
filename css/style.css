@@ -1,0 +1,122 @@
+:root {
+  --naranja: #F09819;
+  --verdeClaro: #C8E362;
+  --amarillo: #EDDE5D;
+  --verdeOscuro: #87B05A;
+  --blanco: #FFF;
+  --negro: #000;
+  --fuentePrincipal: 'Staatliches', cursive;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: var(--fuentePrincipal);
+  color: var(--naranja);
+  margin-bottom: 0px;
+}
+
+body {
+  background-image: url('/img/fondo.jpg');
+  padding-top: 10px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 100vh;
+  position: relative; 
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+
+b {
+  color: var(--negro);
+  background-color: var(--naranja);
+}
+
+.menu {
+  background-color: var(--amarillo);
+  padding: 3px;
+  width: auto;
+  border-style: solid;
+  border-width: 5px;
+  border-color: var(--naranja);
+  justify-content: justify;
+}
+
+.contenedorInvernadero {
+  height: 100%;
+}
+
+#pintaPlantas {
+
+  height: 80%;
+  margin-bottom: 0;
+  padding: 0;
+  display: flex;
+  justify-content:center;
+  align-items: flex-end; /* Alinea las plantas en la parte superior */
+  
+  width: 100%;
+  margin-bottom: 20px;
+  
+}
+
+
+.planta {
+  max-height: 150px; /* Ajusta según sea necesario */
+  margin-right: 20px;
+  margin-bottom: 0px;
+
+}
+
+#techoInvernadero {
+  border-top: 2px solid red;
+  margin-top: 0px;
+}
+
+.ranking {
+  text-align: justify;
+  background-color: var(--verdeClaro);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 2px;
+}
+
+.resultados {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+.tabla {
+  border-collapse: collapse;
+  width: 30%;
+  margin: 10px;
+}
+
+.tabla, th, td {
+  border: 1px solid var(--naranja);
+}
+
+th, td {
+  padding: 8px;
+  text-align: left;
+}
+
+.resultados img {
+  display: block;
+  margin: 0 auto;
+  max-height: 50px;
+}
+
+#pintaPlantas {
+  position:fixed; /* Cambiado a fixed */
+  bottom: 0; /* Ajustado a 0 para que aparezca en la parte inferior */
+  left: 0;
+  width: 100%;
+  margin-bottom: 20px;
+}
